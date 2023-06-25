@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kablammo&family=Kaushan+Script&family=Tilt+Prism&display=swap');
+
+
+
+*{
+    color:white
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  position: static;
+  opacity: 10;
+  pointer-events: initial;
+  transform: scale(1.5);
+
+}
+.addwork
+{width:50%;
+background:darkblue;
+border-radius:3%;
+position: absolute;
+top:0;
+left:50%;
+transform:translate(-50%,-50%)scale(0.1);
+
+padding:2rem;
+visibility: hidden;
+transition: transform 0.4s,top 0.4s;
+
+}
+.open-popup{
+visibility: visible;
+top:50%;
+transform: translate(-50%,-50%)scale(1);
+}
+input[type=text]:not(.browser-default){
+border:0.1em solid white;
+border-radius:2em;
+padding:0.3em;
+color:rgb(11, 5, 35);
+font-size: larger;
+background:rgba(248, 248, 248, 0.622);
+margin-top: 1em;
+
+
+}
+input[type=text]:not(.browser-default)::placeholder{
+color:White;
+font-weight: 700;
+
+}
+.addwork button{
+    background:linear-gradient(rgb(0, 242, 255),lightblue);
+    width:40%;
+    padding: 1em;
+    cursor: pointer;
+    color:white;
+    text-transform:uppercase;
+    font-weight: 500;
+    border:.2em solid white;
+    border-radius:1em;
+    margin:1em auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .addbtn
+    {
+        position:absolute;
+        right:0;
+        bottom: 0;
+    
+        background: rgb(0, 0, 0);
+        outline:none;
+        border:none;
+        font-size: 4em;
+        cursor: pointer;
+        
+    }
+.workarea{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin:4em 1em;
+}
+  .titlework{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#0290f5,#03d7f7,#a7fdcc);
+    border-radius: 2em;
+    padding:0.5em;
+    align-items: center;
+    
+
+  }
+  .titlework h1{
+    
+    font-family: 'Tilt Prism', cursive;
+    font-weight:bold;
+    
+
+  }
+  .titlework img{
+    height:10em;
+    width:15em;
+  }
+
+  .close{
+
+    position:absolute;
+    top:0;
+    right:0;
+    font-size: 2em;
+    
+  }
+  .mworkpage{
+  width:90%;
+    
+    border:0.5em solid white;
+    border-radius: 1em;
+    padding:0.1em;
+    margin-top: 5em;
+    background:linear-gradient(#f70459,#e0709f);
+ 
+  }
+
+  .fworkpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+    
+  }
+  .workpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom:0.1em solid white;
+    padding:.5em 3em;
+    text-transform: capitalize;
+    
+  }
+  .workpage button{
+
+    font-size: 3em;
+    background-color:transparent;
+    outline:none;
+border:none;
+cursor: pointer; 
+ }
+
+ .workpage button svg path {
+  fill: rgb(138, 7, 7);
+}
+
+input[type="checkbox"] {
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 1.5em;
+}
+
+
+input[type="checkbox"]::before {
+  content: '';
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+
+input[type="checkbox"]:checked::before {
+  background-color: rgb(237, 240, 237);
+  content:'✔';
+  color:green;
+  padding: 0.1em;
+}
+
+input[type="checkbox"]::before {
+  transform: scale(1.5);
+}
+
+.workpage h3{
+  margin:0;
+  padding: 0;
+  font-size:2em;
+}
+.mwork{
+  height:100%;
+}
+
+.box div{
+  position:absolute;
+  z-index:-1;
+  font-size: 3em;
+}
+
+
+.checkh3{
+  display:flex;
+  align-items: center;
+}
+  
+.delete{
+
+  display: flex;
+
+
+}
+.delete button svg path{
+  color:red;
+
+}
+.delete button{
+  font-size: 3em;
+  background:transparent;
+  outline:none;
+  border:none;
+  cursor: pointer;
+} 
+
+.con{
+  width:100%;
+}
+
+
+.back{
+  font-size: 2.5em;
+  margin:0;
+  position: absolute;
+  top:1%;
+}
+
+
+
+@media screen and (max-width:560px){
+  .titlework img{
+    width:8em;
+    height:6em;
+  }
+  .titlework h1{
+    margin: 0;
+    font-size:3em;
+  }
+  .workpage h3{
+    font-size: x-large;
+    
+  }
+  .workpage{
+    padding: 0;
+    padding-left:2em;
+  }
+
+}
+
+@media  screen and (max-width:395px) {
+  .titlework img{
+    width:7.1em;
+    height:6em;
+  }
+  .titlework h1{
+    font-size:2em;
+  }
+
+  .titlework{
+    justify-content: space-evenly;
+  }
+  [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+      
+    transform: scale(1);
+    padding-right: 1em;
+  
+  
+  }
+  .workpage button{
+    font-size: 2em;
+  
+
+  }
+
+
+  
+}
+
+@media screen and (max-width:650px){
+  .addwork{
+    width:100%;
+  }
+}

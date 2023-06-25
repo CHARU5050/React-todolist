@@ -1,0 +1,446 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kablammo&family=Kaushan+Script&family=Tilt+Prism&display=swap');
+
+
+body{
+    color:rgb(0,0,0);
+}
+.container{
+    color:white;
+    margin:4em auto;
+    padding: 2em;
+    background:linear-gradient(45deg,#f6b02f,#e62ad9,#1237ef);
+    border:0.2em solid rgba(0,0,0);
+    border-radius:5em;
+    display: flex;
+    gap:2em;
+    color:black;
+}
+.container img{
+    height:10em;
+    width:15em;
+    
+}
+.container h1{
+    margin: 0;
+    font-family: 'Tilt Prism', cursive;
+    font-weight:bold;
+    overflow: break-word;
+    word-wrap: break-word;
+    max-width: 80%;
+        
+    
+    
+}
+ .paraf{
+    font-weight: bolder;
+ }
+
+ .para{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    overflow: break-word;
+        word-wrap: break-word;
+        
+ }
+ 
+.mcontainer{
+    margin-top: 3em;
+    position: relative;
+    padding: 1em;
+
+}
+.mconbtn
+{
+    position:absolute;
+    right:0;
+    bottom: 0;
+
+    background: rgb(0, 0, 0);
+    outline:none;
+    border:none;
+    font-size: 4em;
+    cursor: pointer;
+    
+}
+.add{
+    fill:#ff00aa
+}
+.conbtn{
+    padding:1em;
+    background: linear-gradient(#c8fa52,#13df2e);
+    border:none;
+    border-radius: 10px;
+    font-weight:500;
+    cursor: pointer;
+    
+}
+.conbtn:hover{
+    background: rgb(145, 242, 1);
+}
+    
+.imh1 h1{
+    position: absolute;
+    left: 50%;
+
+  top: 0;
+ 
+        
+  transform: translate(-50%, -50%);
+  font-family: 'Kaushan Script', cursive;
+  font-size: 7em;
+  color: white;
+}
+
+.imh1 h3{
+    position: absolute;
+    left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-family: 'Kaushan Script', cursive;
+  font-size: 7em;
+  color: white;
+}
+
+.imh1 img{
+    width:20%;
+}
+
+
+
+.newtitle{
+    width:50%;
+    background:linear-gradient(90deg,#0a95f9,#08ddfe,#2bf281);
+    border-radius:3%;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding:2em 1em .2em;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    
+    
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+input[type=text]:not(.browser-default){
+    border:0.1em solid white;
+    border-radius:2em;
+    padding:0.3em;
+    color:rgb(11, 5, 35);
+    font-size: larger;
+    background:rgba(248, 248, 248, 0.622);
+    margin-top:1em;
+
+    
+}
+input[type=text]:not(.browser-default)::placeholder{
+    color:White;
+    font-weight: 700;
+    
+}
+
+.radio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.input-container{
+    position:relative;
+    height:5em;
+    width:5em;
+    margin:0.4em;
+    border:0.1em solid rgb(223, 230, 230);
+    border-radius:2% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-container img{
+    height:3em;
+    width:3em;
+    padding:auto
+}
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: absolute;
+
+    pointer-events: initial;
+}
+.input-container input{
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:2;
+    opacity: 0;
+}
+.input-container.checked {
+    background-color: white;
+    box-shadow: 0 0 12px white;
+  }
+  .newtitle p{
+    text-transform: uppercase;
+    font-size:1.5em;
+    font-weight: 500;
+     color:white;
+  }
+  .newtitle button{
+    background:linear-gradient(rgb(0, 242, 255),lightblue);
+    width:100%;
+    padding: 1em;
+    cursor: pointer;
+    color:white;
+    text-transform:uppercase;
+    font-weight: 500;
+    border:.2em solid white;
+    border-radius:1em;
+    margin:2em auto;
+  }
+
+  .close{
+
+    position:absolute;
+    top:0;
+    right:0;
+    font-size: 2em;
+    
+  }
+   
+.del{
+
+    display: flex;
+  
+  
+  }
+.delbtn{
+    padding:1em;
+    background: linear-gradient(#f2a082,#f00707);
+    border:none;
+    border-radius: 10px;
+    font-weight:500;
+    cursor: pointer;
+    margin-left: 0.2em;
+}
+
+
+
+
+  @media screen and (max-width:616px){
+    .container{
+        color:white;
+        margin:4em auto;
+        padding: 1em;
+        background:linear-gradient(45deg,#f6b02f,#e62ad9,#1237ef);
+        border:0.2em solid rgba(0,0,0);
+        border-radius:5em;
+        display: flex;
+        gap:0.5em;
+       
+        
+    
+    }
+   
+    .container img{
+        height:10em;
+        width:7em;
+        
+    }
+    .container h1{
+        margin: 0;
+        font-family: 'Tilt Prism', cursive;
+        font-weight:bold;
+        font-size: 3em;
+        overflow: break-word;
+        word-wrap: break-word;
+        
+        max-width:50%;
+        
+        
+    }
+     .paraf{
+        font-weight: bolder;
+        padding: 0;
+     }
+    
+     .para{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2em;
+     }
+ 
+
+
+  .delete button svg path{
+    color:red;
+  
+  }
+  .delete button{
+    font-size: 3em;
+    background:transparent;
+    outline:none;
+    border:none;
+    cursor: pointer;
+  } 
+  .newtitle{
+    width:70%;
+  }
+  .conbtn{
+    padding:1em;
+    background: linear-gradient(#c8fa52,#13df2e);
+    border:none;
+    border-radius: 10px;
+    font-weight:500;
+    cursor: pointer;
+    
+}
+     
+  }
+
+  @media screen and (max-width:570px){
+
+   
+    .container img{
+        height:8em;
+        width:6em;
+        
+    }
+    .container h1{
+        margin: 0;
+        font-family: 'Tilt Prism', cursive;
+        font-weight:bold;
+        font-size: 2.4em;
+        overflow: break-word;
+        word-wrap: break-word;
+        
+        max-width:50%;
+        
+
+     
+    }}
+
+    @media screen and (max-width:475px){
+
+   
+        .container img{
+            height:6em;
+            width:4em;
+            
+        }
+        .container h1{
+            margin: 0;
+            font-family: 'Tilt Prism', cursive;
+            font-weight:bold;
+            font-size: 2.1em;
+            overflow: break-word;
+            word-wrap: break-word;
+            
+            max-width:50%;
+            
+    
+         
+        }}
+
+        @media screen and (max-width:408px){
+            
+            .container{
+                color:white;
+                margin:4em auto;
+                padding: 1em;
+                background:linear-gradient(45deg,#f6b02f,#e62ad9,#1237ef);
+                border:0.2em solid rgba(0,0,0);
+                border-radius:5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+               
+                
+            
+            }
+            .con{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+           
+            .container img{
+                height:10em;
+                width:7em;
+                
+            }
+            .container h1{
+                margin: 0;
+                font-family: 'Tilt Prism', cursive;
+                font-weight:bold;
+                font-size: 2em;
+                overflow: break-word;
+                word-wrap: break-word;
+                text-align: center;
+                
+                
+                
+                
+            }
+             .paraf{
+                font-weight: bolder;
+                padding: 0;
+             }
+            
+             .para{
+                font-family: 'Dancing Script', cursive;
+                font-size: 1em;
+             }
+         
+        
+          .conbtn{
+            padding:0.7em;
+            background: linear-gradient(#c8fa52,#13df2e);
+            border:none;
+            border-radius: 10px;
+            font-weight:500;
+            cursor: pointer;
+            
+        }
+        .delbtn{
+            padding:0.7em;
+            background: linear-gradient(#f2a082,#f00707);
+            border:none;
+            border-radius: 10px;
+            font-weight:500;
+            cursor: pointer;
+            margin-left: 0.2em;
+        }
+        .del{
+            display: flex;
+            flex-direction: column;
+            gap:0.4em;
+        }
+        .imh1 h1{
+            font-size: 4em;
+        }
+        .imh1 img{
+            width:8em;
+
+        }
+             
+          }
+
+
+@media  screen and (max-width:500px) {
+    .newtitle{
+        width:100%;
+        z-index: 3;
+    }
+    
+}

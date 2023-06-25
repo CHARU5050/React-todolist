@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kablammo&display=swap');
+
+
+.carousel{
+    height:50em;
+}
+
+.carousel .carousel-item{
+    width:20em;
+    
+}
+.carousel .carousel-item img{
+    height: 29em;
+    border:.5em solid rgb(19, 13, 1);
+    border-radius: 10%;
+}
+.carouselh1{
+    
+        position: absolute;
+        top: 0;
+        left: 50%;
+    
+        transform: translateX(-50%);
+        color: rgb(230, 224, 235);
+        font-weight: 900;
+        font-family: 'Kablammo', cursive;
+        font-size: 8rem;
+        width: 100%;
+        text-align: center;
+      
+      
+    
+
+}
+@media screen and (max-width:556px){
+  
+    .carouselh1{
+        font-size: 6em;
+    }
+
+}
+
